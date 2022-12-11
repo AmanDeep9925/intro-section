@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&family=Karla:wght@300&family=Manrope&family=Montserrat:wght@700&display=swap');
+
+*,*::after,*::before {
+    box-sizing: border-box;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+#main{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'article article article' 
+    'footer footer footer';
+    font-family: 'Epilogue',sans-serif;
+}
+
+.nav-section{
+    grid-area: header;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.brand-logo a{
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.navbar-list{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style:none;
+}
+.arrow-down{
+    width: 0.7rem;
+}
+
+.navbar-item{
+    position: relative;   
+}
+
+.under-list{
+    position: absolute;
+    padding: 0.5rem 1.2rem;
+    list-style: none;
+    border-radius: 0.6rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    display: none;
+}
+
+.features{
+    left: -90px;
+    top: 30px;
+    width: 180px;
+}
+
+.company{
+    left: -30px;
+    top: 30px;
+    width: 140px;
+}
+
+.feature-item,.company-item{
+    padding: 0.5rem;
+}
+
+.list-item-image{
+    margin-right:0.8rem;
+}
+
+.login-section{
+    border: 2px solid red;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+}
